@@ -1,0 +1,523 @@
+.about1{
+  height: 500px;
+  background-color: aqua;
+}
+.about2{
+  height: 500px;
+  background-color: rgb(134, 144, 144);
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 0 200px;
+}
+.section-title h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+    text-decoration-color: #28a745;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    margin: 10px 0;
+}
+.section{padding: 100px 0;}
+.Feautes{
+padding-top:0;
+}
+.services-subtitle{
+  font-size: 1.125rem;
+  color: #6c757d;
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Feautes.index2{
+padding-top:100px;
+}
+.Feautes.testimonial-page{
+padding-top:100px;
+}
+.Feautes .single-features{
+text-align:justify;
+position:relative;
+padding:10px 20px;
+}
+.Feautes .single-features::before {
+position: absolute;
+content: "";
+right: -72px;
+top: 60px;
+width: 118px;
+border-bottom: 3px dotted #1a76d1;
+}
+.Feautes .single-features.last::before{
+display:none;
+}
+.Feautes .single-features .signle-icon{
+position:relative;
+}
+.Feautes .single-features .signle-icon i{
+font-size:50px;
+color:#1a76d1;
+background:#667f99;
+position:absolute;
+left:50%;
+margin-left:-50px;
+top:0;
+height:100px;
+width:100px;
+line-height:100px;
+text-align:center;
+border:1px solid #dddddd;
+border-radius:30%;
+-webkit-transition:all 0.4s ease;
+-moz-transition:all 0.4s ease;
+transition:all 0.4s ease;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Feautes .single-features:hover .signle-icon i{
+background-color: #338fc1;
+color:#fff;
+border-color:transparent;
+}
+.Feautes .single-features h3{
+text-align: center;
+padding-top: 128px;
+color:#2C2D3F;
+font-weight:600;
+font-size:21px;
+}
+
+.shield-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shield-list li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start; /* Aligns icon to the top */
+  gap: 10px; /* Adds spacing between the icon and text */
+}
+
+.shield-list i {
+  color: #007bff; /* Change this to match your theme */
+  font-size: 18px;
+  margin-top: 5px; /* Adjust for better vertical alignment */
+}
+
+
+.Feautes .single-features p {
+margin-top: 20px;
+}
+i img {
+  max-width: 60%;  /* Adjust image size as needed */
+  max-height: 60%;
+} 
+/* slider */
+
+/* Container for the carousel */
+/* client-carousel.component.css */
+
+/* Container for the carousel */
+.client-carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center-align the entire carousel */
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20px;
+  width: 100%; /* Ensures full width */
+}
+
+/* Div that holds all the client images */
+.client-images {
+  display: flex;
+  transition: transform 1s ease-in-out; /* Smooth slide transition */
+  width: auto; /* Ensure flexible width */
+  justify-content: center; /* Center-align images horizontally */
+}
+
+/* Styling for each client image */
+.client-image {
+  margin: 0 10px; /* Space between images */
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 200px; /* Image width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: transform 1s ease-in-out;
+  
+}
+
+.client-image img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  
+}
+
+/* Rotation Effects for the outgoing client images */
+.rotate-out-next {
+  transform: rotate(30deg) translateX(50%);
+}
+
+.rotate-out-prev {
+  transform: rotate(-30deg) translateX(-50%);
+}
+
+/* Position for the navigation buttons */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Styling for the navigation buttons */
+.prev-btn,
+.next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile responsiveness for the carousel */
+@media (max-width: 768px) {
+  .client-carousel-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .client-images {
+    flex-direction: row; /* Keep images in horizontal stack */
+    overflow-x: scroll; /* Allow horizontal scroll */
+    justify-content: flex-start; /* Ensure images start from the left */
+    gap: 0; /* No gap between images on mobile */
+    padding: 0px 30px;
+  }
+
+  .client-image {
+    margin: 0 5px; /* Smaller margin for mobile devices */
+    max-width: 160px;
+    flex-grow: 1;
+    flex-basis: 20%; /* Take up approximately 25% of the container width */
+  }
+
+  .client-image img {
+    max-height: 100px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+/* Laptop / Desktop view */
+@media (min-width: 769px) {
+  .client-carousel-container {
+    width: 100%;
+  }
+
+  .client-images {
+    gap: 50px; /* Add 20px gap between images */
+    justify-content: center; /* Center the images */
+    
+  }
+
+  .client-image {
+    margin: 0; /* Reset margin to ensure consistent gap */
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .client-image img {
+    max-height: 150px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    padding: 10px;
+    font-size: 24px;
+  }
+}
+
+
+/* our vision starts */
+.vision-section {
+  background-image: url('/vision.jpg'); /* Replace with your actual image */
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Ensure background covers the full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: #001f3d; /* Dark blue background to match the theme */
+}
+
+/* Content inside the section */
+.vision-content {
+  max-width: 800px;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);  /* Darker overlay for contrast */
+  color: #fff;  /* White text for readability */
+  text-align: center;
+  border-radius: 10px;
+  transform: translateX(-100%); /* Start off-screen from the left */
+  animation: slideIn 1s ease-out forwards; /* Animation to slide in from the left */
+}
+
+/* Header styling */
+.vision-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #63a8eb;  /* Bright blue for the header */
+  text-transform: uppercase; /* Make header text more impactful */
+  letter-spacing: 2px; /* Add space between letters */
+  border-bottom: 3px solid #28a745;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+/* Paragraph styling */
+.vision-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-style: italic; /* Add some flair to the text */
+}
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .vision-section {
+    height: auto; /* Allow the section to be taller on smaller screens */
+    padding: 40px 10px;
+  }
+
+  .vision-content {
+    padding: 20px;
+    width: 90%; /* Make sure the content doesn't stretch too much on smaller screens */
+    max-width: none;
+  }
+
+  .vision-content h2 {
+    font-size: 2rem; /* Adjust header font size on smaller screens */
+    letter-spacing: 1px; /* Adjust letter spacing for mobile */
+  }
+
+  .vision-content p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-content h2 {
+    font-size: 1.5rem; /* Further adjust font size on very small screens */
+  }
+
+  .vision-content p {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+}
+
+
+/* our vision ends */
+
+/* Responsive Design for different screen sizes */
+
+/* For smaller tablets and medium screens, display 2 logos */
+@media (max-width: 768px) {
+  .logo {
+    width: 45%; /* Adjust to fit 2 logos */
+  }
+}
+
+/* For mobile devices, display 1 logo at a time */
+@media (max-width: 480px) {
+  .logo {
+    width: 80%; /* Adjust to fit 1 logo */
+  }
+}
+
+
+/* slider ends   */
+@media (max-width: 768px) {
+  .section{
+      padding:15px 0px 30px;
+  }
+  .section-title {
+      margin-bottom: 35px;
+      padding: 0px 40px;
+  }
+  .section-title h2 {
+      font-size: 25px;
+      margin-bottom: 12px;
+  }
+  .section-title p {
+      font-size: 13px;
+  }
+  .Feautes .single-features .signle-icon i {
+      font-size: 42px;
+      left: 50%;
+      margin-left: -40px;
+      height:80px;
+      width: 80px;
+      line-height: 80px;
+  }
+  .Feautes .single-features::before {
+      display:none;
+      border-bottom: #fff;
+  }
+  .Feautes .single-features {
+    position: relative;
+    border-left: 3px solid #686ecc;
+        border-bottom: 3px solid black;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        margin: 10px;
+        background: linear-gradient(85deg, rgb(137 127 219) 0%, rgba(184, 184, 237, 1) 50%, rgb(0 0 0 / 0%) 100%);
+  }
+  .Feautes .single-features h3 {
+      padding-top: 105px;
+      font-size: 20px;
+  }
+  
+}
+@media (max-width: 450px) {
+  .section-title h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+  }
+}
+
+/* cards */
+.cards-section{
+margin: 30px 80px;
+}
+.card-container {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+
+.card {
+position: relative;
+width: 100%;
+max-width: 300px;
+margin: 10px;
+overflow: hidden;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+background-color: #fff;
+font-family: 'Roboto', sans-serif;
+}
+
+/* .card:hover {
+transform: scale(1.05);
+} */
+
+.image-container {
+position: relative;
+width: 100%;
+height: 300px;
+overflow: hidden;
+}
+
+.image-container img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+transform: scale(1.05);
+}
+
+.overlay {
+position: absolute;
+bottom: -80%;
+width: 100%;
+background: rgba(0, 0, 0, 0.7);
+color: white;
+padding: 10px;
+box-sizing: border-box;
+transition: bottom 0.3s ease;
+}
+
+.card:hover .overlay {
+bottom: 0;
+}
+
+.card h3 {
+text-align: center;
+margin: 5px 0;
+font-family: 'Roboto', sans-serif;
+
+}
+.Officeposition{
+text-align: center;
+margin: 10px 0;
+font-family: monospace;
+  font-size: larger;
+}
+
+
+

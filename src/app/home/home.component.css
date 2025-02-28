@@ -1,0 +1,258 @@
+/* Home Banner container */
+.home-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/camera.jpg') center center / cover no-repeat;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Parallax effect on scroll */
+.home-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.home-banner-content {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-banner-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #FF6F00; /* Warm, energetic color */
+  animation: fadeInTitle 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Fade-in effect for title */
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-banner-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #f0f0f0; /* Light grey text */
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  animation: fadeInText 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+/* Fade-in effect for description */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-banner-button {
+  background-color: #FF6F00;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInButton 1.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+/* Hover effect on button */
+.home-banner-button:hover {
+  background-color: #FF3D00;
+  transform: translateY(-5px);
+}
+
+/* Fade-in effect for button */
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .home-banner-title {
+    font-size: 40px;
+  }
+
+  .home-banner-description {
+    font-size: 18px;
+  }
+
+  .home-banner-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}
+
+
+  /* info section starts */
+  .info-section-all{
+    background-image: url('/camera.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .info-section {
+    /* background: linear-gradient(to right, rgba(150, 0, 0, 0.8), rgba(0, 0, 150, 0.8));
+    */color: white; 
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+  }
+
+  .info-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    margin: 15px 20px;
+    padding: 0px 40px;
+  }
+
+  .info-item {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  h2 {
+    font-size: 80px;
+    padding: 0;
+    margin: 0px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .info-item p{
+    font-size: 24px;
+    margin: 0;
+    padding: 0px 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  p {
+    font-size: 24px;
+    margin: 0;
+    padding: 30px;
+  }
+
+  .description {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .button-container {
+    text-align: center;
+  }
+
+  .download-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .download-btn:hover {
+    background: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .info-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .info-item {
+      min-width: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+    }
+
+    .info-item h2 {
+      /* font-size: 1.8rem; */
+    }
+
+    .info-item p {
+      font-size: 15px;
+      padding: 0px;
+    }
+
+    .description {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+
+    .button-container {
+      width: 100%;
+    }
+
+    .download-btn {
+      width: 90%;
+      max-width: 300px;
+    }
+  }

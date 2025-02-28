@@ -1,0 +1,80 @@
+.HeaderGap{
+  margin-top: 50px;
+}
+.banner-container {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  
+}
+
+/* Dark overlay (background only) */
+.banner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to top, rgba(255, 255, 255, 1) 0%,/* White at bottom */
+   rgba(0, 0, 0, 0.7) 25%,/* Transition at 15% height */
+    rgba(0, 0, 0, 0.6) 100%);/* Keep rest dark */
+  z-index: 1; /* Keeps overlay behind text */
+}
+
+/* Ensure text is above overlay */
+.content {
+  position: relative;
+  z-index: 2; /* Places text above the overlay */
+  padding: 20px;
+  text-align: center;
+  padding-top: 90px;
+}
+
+/* Ensuring text remains pure white */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white; /* Force pure white */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: Improve contrast */
+}
+
+p {
+  font-size: 1.2rem;
+  color: white; /* Force pure white */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Improves visibility */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .banner-container {
+    height: 250px;
+        width: 100%;
+        text-align: center;
+        padding-top: 140px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .content{
+    width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 110px;
+  }
+}

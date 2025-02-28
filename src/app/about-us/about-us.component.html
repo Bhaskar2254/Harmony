@@ -1,0 +1,122 @@
+<app-header-banner
+  [backgroundImage]="'/Handshake.jpg'"
+  [title]="'More about WHO WE ARE'"
+  [text]="'At Harmony, we give our best in the fields we work...'">
+</app-header-banner>
+<!-- <section class="about1">dddd</section> -->
+<app-company-potential></app-company-potential>
+<!-- Start Feautes -->
+<section class="Feautes section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>Our Operations</h3>
+                    <img src="/section-img.png" alt="#">
+                    <p class="services-subtitle">Empowering Security with Excellence in Recruitment, Training, and Monitoring.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-ambulance-cross">
+                          <img src="/recruitment.gif">
+                        </i>
+                    </div>
+                    <h3>Recruitment</h3>
+                    <p></p>
+                    <ul class="shield-list">
+                      <li><i class="fas fa-shield-alt"></i> We meticulously select individuals who embody integrity, vigilance, and commitment, ensuring your security team is built on a foundation of trust.</li>
+                      <li><i class="fas fa-shield-alt"></i> We are not just hiring; we are shaping the future of your security with individuals who exceed expectations.</li>
+                      <li><i class="fas fa-shield-alt"></i> Every recruit is carefully chosen to safeguard your assets, bringing expertise and a proactive mindset to your protection.</li>
+                  </ul>
+                    </div>
+                <!-- End Single features -->
+            </div>
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-medical-sign-alt">
+                          <img src="/security_training.gif">
+                        </i>
+                    </div>
+                    <h3>Training</h3>
+                    <p></p>
+                    <ul class="shield-list">
+                      <li><i class="fas fa-shield-alt"></i> We empower security team with cutting-edge training, turning every member into an expert in crisis management and safety protocols.</li>
+                      <li><i class="fas fa-shield-alt"></i> Security is only as strong as the training behind it—our training programs ensure your team is ready for anything..</li>
+                      <li><i class="fas fa-shield-alt"></i> Through continuous training, we guarantee that your security team is always a step ahead of emerging threats.
+                      </li>
+                  </ul>
+                </div>
+                <!-- End Single features -->
+            </div>
+            <div class="col-lg-4 col-12">
+                <!-- Start Single features -->
+                <div class="single-features last">
+                    <div class="signle-icon">
+                        <i class="icofont icofont-stethoscope">
+                          <img src="/watcher.gif">
+                        </i>
+                    </div>
+                    <h3>Monitoring</h3>
+                    <p></p>
+                    <ul class="shield-list">
+                      <li><i class="fas fa-shield-alt"></i> Our monitoring solutions are built to ensure 24/7 protection, giving you peace of mind knowing your property is always under watchful eyes.</li>
+                      <li><i class="fas fa-shield-alt"></i> Real-time monitoring means real-time responses.never let a moment of vulnerability go unchecked.</li>
+                      <li><i class="fas fa-shield-alt"></i> Our proactive monitoring prevents potential threats before they become problems, ensuring your safety is never compromised. </li>
+                  </ul>
+                </div>
+                <!-- End Single features -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Feautes -->
+<section class="">
+    <div class="section-title"><h3>Our Clients</h3></div>
+<div class="client-carousel-container">
+  <div class="client-images">
+    <div *ngFor="let client of visibleClients" class="client-image">
+      <img [src]="client.imgSrc" [alt]="client.name" />
+    </div>
+  </div>
+
+  <div class="carousel-controls">
+    <button (click)="prevClient()" class="prev-btn">←</button>
+    <button (click)="nextClient()" class="next-btn">→</button>
+  </div>
+</div>
+
+      
+</section>
+
+<app-security-service></app-security-service>
+<section class="vision-section">
+    <div class="vision-content">
+      <h2>Our Vision</h2>
+      <p>We strive to lead the security industry by providing innovative, reliable, and accessible solutions that keep you safe—anytime, anywhere.</p>
+      <p>Our mission is to offer peace of mind through advanced technology and expert protection for businesses and homes alike.</p>
+    </div>
+  </section>
+  <section class="cards-section">
+    <div class="card-container">
+        <div class="card" *ngFor="let person of people">
+          <div class="image-container">
+            <img [src]="person.image" alt="{{ person.name }}">
+            <div class="overlay">
+              <p>{{ person.description }}</p>
+            </div>
+          </div>
+          <h3>{{ person.name }}</h3>
+          <p class="Officeposition">{{ person.position }}</p>
+        </div>
+      </div>
+      
+  </section>
+  
+  

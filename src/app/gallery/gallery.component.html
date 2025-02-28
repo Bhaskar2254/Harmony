@@ -1,0 +1,15 @@
+<app-header-banner
+  [backgroundImage]="'/Handshake.jpg'"
+  [title]="'More about HOW WE WORK'"
+  [text]="'At Harmony, we give our best in the fields we work...'">
+</app-header-banner>
+<div class="gallery-container">
+    <h2 class="gallery-heading">Watchmen Training and Activities</h2>
+    <div class="gallery">
+      <div class="gallery-item" *ngFor="let image of images">
+        <img [src]="image.src" [alt]="image.alt" class="gallery-image" />
+      </div>
+    </div>
+  </div>
+  
+  

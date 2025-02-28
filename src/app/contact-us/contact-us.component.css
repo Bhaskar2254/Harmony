@@ -1,0 +1,189 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Form container */
+.form-container {
+    justify-content: flex-end;
+    /*  max-width: 600px; */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* Form heading */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group (input fields) */
+/* .form-group {
+    margin-bottom: 20px;
+} */
+
+/* Text and input fields */
+input[type="text"], input[type="tel"], input[type="email"], textarea, select {
+    width: 50%;
+    padding: 13px;
+    
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+textarea {
+    resize: vertical;
+}
+
+/* Submit button styles */
+.submit-btn {
+    margin-top: 9%;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    border-radius: 9px;
+    width: 35%;
+    height: 3.5pc;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+/* Input focus styles */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+    }
+
+    .submit-btn {
+        padding: 10px 15px;
+    }
+}
+
+.form-container h3{
+    margin-left: 80%;
+}
+
+.form-group{
+    margin-right: 78%;
+    padding-right: 10%;
+}
+
+.form-group1{
+    margin-right: 80%;
+}
+
+
+/* NEW FORM CONTACT use */
+.container{ 
+    /* width: 100%;
+    margin: 20px;
+    min-height: 100vh;
+    padding: 20px 0px;
+    display: grid; 
+    text-align: center; */
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.accordion__wrapper {
+    background-color: white;
+    box-shadow: 0px 60px 56px -12px rgba(9, 40, 163, 0.05);;
+    border-radius: 2.5rem;
+    /* width: 100%; */
+    /* max-width: 60rem;
+    padding: 5rem; */
+}
+.accordion__wrapper h1{
+    text-align: center;
+}
+.accordion__title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #28a745;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.accordion {
+    border-bottom: 0.1rem solid #dae1f5;
+    /* padding-bottom: 2rem;
+    margin-bottom: 2rem; */
+    padding: 18px 20px;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+} 
+
+.accordion__icon {
+    background-color: #44f56f;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #000;
+
+}
+
+.accordion__question{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #242e4c;
+}
+
+.accordion__answer{
+    padding: 2rem 0;
+    text-align: left;
+    font-family: "Satoshi";
+}
+li{
+    text-align: left;
+}
+.accordion__content{
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s ease;
+    
+    
+}
+
+@media screen and (min-width: 580px) {
+    .accordion__wrapper {
+        padding: 5rem 8rem;
+    }
+}

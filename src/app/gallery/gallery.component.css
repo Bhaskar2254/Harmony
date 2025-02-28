@@ -1,0 +1,28 @@
+.gallery-container {
+    padding: 20px;
+  }
+  
+  .gallery-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  
+  .gallery-item {
+    position: relative;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,281 @@
+
+
+.sectionOne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-image: url('/camera.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 45%;
+  margin-right: 20px;
+  position: relative;
+  padding: 40px 0px 40px 40px;
+}
+
+.culture-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.culture-image:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+.text-container {
+  flex: 1;
+  max-width: 45%;
+  margin-right: 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.bullet-points {
+  list-style-type: none;
+  padding-left: 0;
+  color: #fff;
+}
+
+.bullet-points li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.bullet-points li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #007bff; /* Customize bullet color */
+}
+
+@media (max-width: 768px) {
+  .sectionOne {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 100%;
+    margin-right: 0;
+    padding: 0px;
+  }
+
+  .culture-image {
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+  }
+
+  .text-container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sectionOne {
+    padding: 30px;
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 45%;
+    margin: 10px;
+  }
+
+  .culture-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-container {
+    padding: 20px;
+  }
+}
+
+
+  /* SERVICEs information */
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Use a modern, sans-serif font */
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .service-image {
+    flex: 1;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .service-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a soft shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Subtle hover effect */
+  }
+  
+  .service-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .service-info {
+    flex: 2;
+    text-align: center;
+  }
+  
+  .service-info h3 {
+    font-size: 28px;
+    color: #333; /* Dark color for headings */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* A modern font for headings */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the heading stand out */
+    letter-spacing: 1px; /* Adds spacing between letters for elegance */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color */
+  }
+  
+  .service-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666; /* Lighter color for description */
+    font-family: 'Georgia', serif; /* Elegant serif font for body text */
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .service-info p:hover {
+    color: #0056b3; /* Change color on hover to make it interactive */
+  }
+  
+  .service-info .cta {
+    font-size: 18px;
+    color: #fff;
+    background-color: #0056b3; /* A strong call to action button color */
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+  }
+  
+  .service-info .cta:hover {
+    background-color: #004085; /* Darker shade for hover effect */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .image-left {
+    order: 0;
+  }
+  
+  .image-right {
+    order: 1;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .service-content {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .service-image {
+      padding-right: 0;
+      padding-bottom: 20px;
+      width: 100%;
+    }
+  
+    .service-info {
+      width: 100%;
+    }
+  
+    .service-info h3 {
+      text-align: center;
+    }
+  
+    .service-info p {
+      font-size: 16px;
+      text-align: center;
+      padding: 0 20px; /* Adds padding to the sides */
+    }
+  
+    .cta {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    /* Fixing the issue with order on mobile */
+    .service:nth-child(odd) .service-image {
+      order: 0;  /* Ensure image is above info for odd services */
+    }
+  
+    .service:nth-child(odd) .service-info {
+      order: 1;  /* Ensure text is below the image for odd services */
+    }
+  
+    .service:nth-child(even) .service-image {
+      order: 0;  /* Ensure image is above info for even services */
+    }
+  
+    .service:nth-child(even) .service-info {
+      order: 1;  /* Ensure text is below the image for even services */
+    }
+  
+    .service-info h3 {
+      text-align: center;
+    }
+  }
+  
