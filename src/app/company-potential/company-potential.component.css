@@ -31,7 +31,8 @@
       transition: all 0.3s ease-in-out;
   
       &:hover {
-        background: #e9f2ff;
+         background: #e9f2ff;
+        /* background: #fff7f2; */
       }
   
       h3 {
@@ -49,7 +50,8 @@
     }
   
     @media (max-width: 768px) {
-      padding: 15px;
+      /* padding: 15px; */
+      margin: 25px auto;
   
       h2 {
         font-size: 26px;
@@ -59,14 +61,16 @@
         padding: 10px;
   
         h3 {
-          font-size: 20px;
+          font-size: 21px;
+        font-variant-caps: all-petite-caps;
         }
   
         p {
-          font-size: 14px;
-          text-align: justify;
-        }
+          font-size: 12px;
+        text-align: justify;
+        padding-right: 8px;
+        /* font-weight: 600;*/
       }
     }
   }
-  
+}

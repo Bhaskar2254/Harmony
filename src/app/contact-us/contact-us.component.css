@@ -1,100 +1,138 @@
 
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Form container */
-.form-container {
-    justify-content: flex-end;
-    /*  max-width: 600px; */
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-}
-
-/* Form heading */
-.form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Form group (input fields) */
-/* .form-group {
-    margin-bottom: 20px;
-} */
-
-/* Text and input fields */
-input[type="text"], input[type="tel"], input[type="email"], textarea, select {
-    width: 50%;
-    padding: 13px;
+    .containerContact {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(39,119,213,1) 100%);
+	    color: #485e74;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3em 1em; 
+        font-family: 'Satoshi';
+        font-weight: 300;
+    }
+    h1{
+        font-weight: 800;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
     
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/* Textarea specific styles */
-textarea {
-    resize: vertical;
-}
-
-/* Submit button styles */
-.submit-btn {
-    margin-top: 9%;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    border: none;
-    border-radius: 9px;
-    width: 35%;
-    height: 3.5pc;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: black;
-}
-
-/* Input focus styles */
-input:focus, textarea:focus, select:focus {
-    outline: none;
-    border-color: #0056b3;
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-    .form-container {
-        padding: 15px;
+    .brand {
+        text-align: center;
     }
-
-    .submit-btn {
-        padding: 10px 15px;
+    
+    .brand span {
+        color: #25c4c4;
     }
-}
-
-.form-container h3{
-    margin-left: 80%;
-}
-
-.form-group{
-    margin-right: 78%;
-    padding-right: 10%;
-}
-
-.form-group1{
-    margin-right: 80%;
-}
-
-
+    
+    .wrapper {
+        box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+    }
+    
+    .wrapper > * {
+        padding: 1em;
+    }
+    
+    .company-info {
+        background: #c9e6ff;
+    }
+    
+    .company-info ul {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .company-info h3{
+        font-size: 20px;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-weight: 800;
+        padding-bottom: 300px;
+    }
+    .contact {
+        background: #f9feff;
+    }
+    .contact h2{
+        font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 25px;
+    color: #5b5d65;
+    font-family: sans-serif;
+    font-size: 32px;
+    }
+    /*================
+        FORM STYLES
+    ==================*/
+    .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    
+    .contact form label {
+        display: block;
+    }
+    
+    .contact form p {
+        margin: 0;
+    }
+    
+    .contact form .full {
+        grid-column: 1 / 3;
+    }
+    
+    .contact form button, 
+    .contact form input, 
+    .contact form textarea {
+        border-radius: 15px;
+        width: 100%;
+        padding: 1em;
+        border: 1px solid #c9e6ff;
+    }
+    
+    .contact form textarea {
+        resize: none;
+    }
+    
+    .contact form button {
+        background: #c9e6ff;
+        border: 0;
+        text-transform: uppercase;
+    }
+    
+    .contact form button:hover, .contact form button:focus {
+        background: #92bde7;
+        color: #fff;
+        outline: 0;
+        transition: background-color 2s ease-out;
+    } 
+    
+    /*=================
+        LARGE SCREENS
+    ===================*/
+    @media (min-width: 700px) {
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    
+        .wrapper > * {
+            padding:1em 2em;
+        }
+    
+        .company-info h3, .company-info ul, .brand {
+            text-align: left;
+        }
+        
+    }
+    @media screen and (max-width: 720px){
+        .company-info h3{
+            padding-bottom: 50px;
+        }
+        .contact h2{
+            font-size: 29px;
+        }
+    }
 /* NEW FORM CONTACT use */
-.container{ 
+.containerFAQ{ 
     /* width: 100%;
     margin: 20px;
     min-height: 100vh;
@@ -148,7 +186,8 @@ input:focus, textarea:focus, select:focus {
 } 
 
 .accordion__icon {
-    background-color: #44f56f;
+    /* background-color: #44f56f; */
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,82,255,1) 100%);
     width: 2.2rem;
     height: 2.2rem;
     display: flex
@@ -161,7 +200,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .accordion__question{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #242e4c;
 }
@@ -186,4 +225,26 @@ li{
     .accordion__wrapper {
         padding: 5rem 8rem;
     }
+    
 }
+@media screen and (max-width: 720px){
+    .containerFAQ{
+        margin: 20px 0px;
+    }
+    .accordion__title{
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        margin-bottom: 20px;
+    }
+    .accordion__question{
+        font-size: 1.1rem;
+}
+.accordion__answer{
+    padding: 1rem 0;
+}
+.accordion__content p{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+}
+

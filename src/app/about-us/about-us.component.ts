@@ -10,7 +10,8 @@ export class AboutUsComponent implements OnInit{
   people = [
     { image: '/Suraj.png', name: 'Mr.Suraj Shinde', position: 'CEO', description: 'Suraj Shinde has over 10 years of experience in the Security industry, leading innovative projects and teams.' },
     { image: '/modi1.jpg', name: 'Mrs. Namrata Bakre', position: 'HR Manager', description: 'Mrs. Namrata leverages her expertise to develop effective financial strategies that drive the growth of our organization. With over 4 years of experience in the HR department, she has contributed in creating impactful solutions' },
-    { image: '/modi2.jpg', name: 'Mr. Tukaram Ganjave', position: 'Admin Officer', description: 'Admin Officer description here.' }
+    { image: '/modi2.jpg', name: 'Mr. Tukaram Ganjave', position: 'Admin Officer', description: 'Admin Officer description here.' },
+    { image: '/modi2.jpg', name: 'Mr. Tushar Jadhav', position: 'Admin Officer', description: 'Admin Officer description here.' }
   ];
 
 

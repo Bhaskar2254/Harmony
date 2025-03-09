@@ -1,6 +1,6 @@
 <app-header-banner
   [backgroundImage]="'/Handshake.jpg'"
-  [title]="'More about WHAT WE DO'"
+  [title]="'WHAT WE DO'"
   [text]="'At Harmony, we give our best in the fields we work...'">
 </app-header-banner>
 <section class="section2">
@@ -21,20 +21,45 @@
       </ul>
     </div>
   </div>
-  
    </section>
-   <section>
-    <div class="services-container">
-      <div class="service" *ngFor="let service of services; let i = index">
-        <div class="service-content">
-          <div class="service-image" [ngClass]="{'image-left': i % 2 === 0, 'image-right': i % 2 !== 0}">
-            <img [src]="service.imageUrl" alt="{{ service.title }}">
-          </div>
-          <div class="service-info">
-            <h3>{{ service.title }}</h3>
-            <p>{{ service.description }}</p>
-          </div>
+   <section class="section3">
+    <div class="card-container3">
+      <div class="card3" *ngFor="let service of services3; let i = index" [ngStyle]="{'animation-delay': i * 100 + 'ms'}">
+        <div class="image-container3">
+          <img [src]="service.image" alt="Housekeeping Service" />
+        </div>
+        <div class="content3">
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+        </div>
+        <div class="footer3">
+          <a href="#" class="quote-btn3">GET QUOTE</a>
         </div>
       </div>
     </div>
-   </section>
+  </section>
+    <section class="WCSservice-section" [@fadeInAnimation]>
+      <div class="WCScontainer">
+        <div class="WCSimage-container">
+          <img src="watch3.jpg" alt="Security Surveillance">
+        </div>
+        <div class="WCStext-container">
+          <h2>THE TRAINING WE OFFER</h2>
+          <p>
+            The training we offer to external parties is developed in close consultation with relevant personnel to ensure the specific needs of each organisation are met.
+          </p>
+          <p> • Emergency response • Conflict resolution
+            • Customer service • Armed robbery
+            • Suspicious packages • Holding techniques
+            • Dealing with aggressive persons
+            • Incident reporting
+            • Hazard Identification & risk assessment
+            • Equal Employment Opportunity-discrimination
+            • Supervisor training</p>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    

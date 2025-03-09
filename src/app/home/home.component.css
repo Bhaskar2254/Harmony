@@ -235,6 +235,7 @@
 
     .info-item h2 {
       /* font-size: 1.8rem; */
+      color: black;
     }
 
     .info-item p {
@@ -255,4 +256,70 @@
       width: 90%;
       max-width: 300px;
     }
+  }
+
+  /* HomePageService */
+  .HomeImage1{
+    margin-top: 15px;
+    width: 50%;
+  }
+  .HomePageService{
+    text-align: center;
+  }
+  .HomePageServiceContent{
+    
+    padding-top: 20px;
+  }
+  .HomePageServiceContent p{
+    padding: 30px 60px 30px 60px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+    color: #6d6697;
+    text-align: justify;
+  }
+
+  /* slider */
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	/* height: 100px; */
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: auto;
+  background-color: rgb(0 151 192);
+}
+.slider-header {
+  margin: 40px 30px 0px 100px;
+  font-size: 25px;
+  font-family: fantasy;
+  letter-spacing: 7px;
+  color: aliceblue;
+  /* font-weight: 900; */
+  text-transform: uppercase;
+}
+.slider-header span{
+  font-size: 40px;
+}
+	.slide-track {
+		animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(350px* 7);
+    align-items: center;
+    height: 200px;
+    align-items: center;
+	}
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+  .slide p{
+    padding:0px 50px;
+  }
+  .slide img{
+    padding:0px 50px;
   }

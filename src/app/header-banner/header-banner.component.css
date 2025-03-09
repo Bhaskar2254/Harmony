@@ -1,5 +1,5 @@
 .HeaderGap{
-  margin-top: 50px;
+  margin-top: 65px;
 }
 .banner-container {
   margin-top: 20px;
@@ -39,7 +39,6 @@
   text-align: center;
   padding-top: 90px;
 }
-
 /* Ensuring text remains pure white */
 h1 {
   font-size: 2rem;
@@ -54,9 +53,14 @@ p {
   color: white; /* Force pure white */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Improves visibility */
 }
-
+span{
+  color: skyblue;
+}
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+  .HeaderGap{
+    margin-top: 50px;
+  }
   .banner-container {
     height: 250px;
         width: 100%;

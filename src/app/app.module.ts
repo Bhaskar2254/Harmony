@@ -15,6 +15,7 @@ import { SecurityServiceComponent } from './security-service/security-service.co
 import { HeaderBannerComponent } from './header-banner/header-banner.component';
 import { CompanyPotentialComponent } from './company-potential/company-potential.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { GalleryComponent } from './gallery/gallery.component';
   imports: [AlertModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule
     
   ],
   providers: [
