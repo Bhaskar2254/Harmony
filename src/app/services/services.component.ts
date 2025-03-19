@@ -6,14 +6,14 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   
   templateUrl: './services.component.html',
   styleUrl: './services.component.css',
-  animations: [
-    trigger('fadeInAnimation', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(50px)' }),
-        animate('800ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
-      ])
-    ])
-  ]
+  // animations: [
+  //   trigger('fadeInAnimation', [
+  //     transition(':enter', [
+  //       style({ opacity: 0, transform: 'translateY(50px)' }),
+  //       animate('800ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
+  //     ])
+  //   ])
+  // ]
 })
 export class ServicesComponent {
  
@@ -37,6 +37,16 @@ export class ServicesComponent {
       image: 'watch3.jpg',
       title: 'HOUSEKEEPING SERVICES',
       description: 'Enrich the productivity with our shining and calming housekeeping services.'
+    },
+    {
+      image: 'watch1.jpg',
+      title: 'Bodyguard services',
+      description: 'We ensure your safety with elite protection.Trust us for unmatched security and peace of mind.'
+    },
+    {
+      image: 'watch1.jpg',
+      title: 'Bodyguard services',
+      description: 'We ensure your safety with elite protection.Trust us for unmatched security and peace of mind.'
     },
     {
       image: 'watch1.jpg',

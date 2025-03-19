@@ -1,7 +1,7 @@
 import {
   NgClass,
   NgIf
-} from "./chunk-3TG34RP5.js";
+} from "./chunk-J6PF7ZED.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -33,7 +33,8 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵtext
-} from "./chunk-SU6EAKUH.js";
+} from "./chunk-XPZQP3KP.js";
+import "./chunk-3OV72XIM.js";
 
 // node_modules/ngx-bootstrap/utils/fesm2022/ngx-bootstrap-utils.mjs
 var win = typeof window !== "undefined" && window || {};

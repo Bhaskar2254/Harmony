@@ -435,16 +435,12 @@ i img {
   }
   .Feautes .single-features h3 {
       padding-top: 105px;
-      font-size: 20px;
+      font-size: 25px;
+        font-variant-caps: all-petite-caps;
   }
   
 }
-@media (max-width: 450px) {
-  .section-title h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-  }
-}
+
 
 /* cards */
 .cards-section{
@@ -526,6 +522,20 @@ font-family: 'Roboto', sans-serif;
   /* font-family: serif, sans-serif; */
   font-weight: 550;
 }
-
+@media (max-width: 700px) {
+  .cards-section{
+    margin: 10px 10px;
+    }
+    .image-container{
+      height: 250px;
+    }
+  .overlay p{
+  font-size: 13px;
+  }
+  .personName{
+    font-size: 20px;
+    font-family: 'Poppins';
+  }
+}
 
 

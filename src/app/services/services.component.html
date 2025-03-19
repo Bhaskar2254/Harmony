@@ -8,23 +8,23 @@
     <div class="image-container">
       <img src="watch1.jpg" alt="Culture Image" class="culture-image" />
     </div>
-    <div class="text-container">
+    <div class="text-container" >
       <h2 class="section-title">Culture We Nourish</h2>
       <p class="intro-paragraph">
-        At Watchman Security, we are committed to fostering a culture that emphasizes integrity, vigilance, and continuous improvement. Our team is dedicated to providing top-tier security services while nurturing a supportive and ethical work environment.
+        We emphasize in integrity, vigilance, and continuous improvement. Our team is dedicated to providing top-tier security services while nurturing a supportive and ethical work environment.
       </p>
       <ul class="bullet-points">
-        <li>Integrity at Core: Upholding the highest ethical standards in all our operations.</li>
-        <li>Vigilant Monitoring: Ensuring 24/7 surveillance to protect assets and individuals.</li>
-        <li>Continuous Improvement: Regular training and development to stay ahead in the security industry.</li>
-        <li>Community Engagement: Actively participating in local initiatives to strengthen community ties.</li>
+        <li><span>Integrity at Core </span>: Upholding the highest ethical standards in all our operations.</li>
+        <li><span>Vigilant Monitoring </span>: Ensuring 24/7 surveillance to protect assets and individuals.</li>
+        <li><span>Continuous Improvement</span>: Regular training and development to stay ahead in the security industry.</li>
+        <li><span>Community Engagement</span>: Actively participating in local initiatives to strengthen community ties.</li>
       </ul>
     </div>
   </div>
    </section>
    <section class="section3">
     <div class="card-container3">
-      <div class="card3" *ngFor="let service of services3; let i = index" [ngStyle]="{'animation-delay': i * 100 + 'ms'}">
+      <div class="card3" *ngFor="let service of services3; let i = index" [ngStyle]="{'animation-delay': i * 100 + 'ms'}" >
         <div class="image-container3">
           <img [src]="service.image" alt="Housekeeping Service" />
         </div>
@@ -38,7 +38,7 @@
       </div>
     </div>
   </section>
-    <section class="WCSservice-section" [@fadeInAnimation]>
+    <section class="WCSservice-section" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="50" data-aos-easing="ease-out">
       <div class="WCScontainer">
         <div class="WCSimage-container">
           <img src="watch3.jpg" alt="Security Surveillance">

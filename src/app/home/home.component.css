@@ -1,3 +1,4 @@
+
 /* Home Banner container */
 .home-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/camera.jpg') center center / cover no-repeat;
@@ -221,10 +222,17 @@
   }
 
   @media (max-width: 768px) {
+     *{
+      font-family: "Jost", sans-serif; 
+   }
+   P{
+    padding: 0px;
+   } 
     .info-content {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      margin: 15px 15px;
     }
 
     .info-item {
@@ -256,12 +264,15 @@
       width: 90%;
       max-width: 300px;
     }
+
   }
 
   /* HomePageService */
   .HomeImage1{
     margin-top: 15px;
     width: 50%;
+    animation: autoRotate 5s linear;
+    animation-timeline: view();
   }
   .HomePageService{
     text-align: center;
@@ -294,7 +305,7 @@
   background-color: rgb(0 151 192);
 }
 .slider-header {
-  margin: 40px 30px 0px 100px;
+  margin: 20px 30px 0px 100px;
   font-size: 25px;
   font-family: fantasy;
   letter-spacing: 7px;
@@ -304,22 +315,50 @@
 }
 .slider-header span{
   font-size: 40px;
+  color: #e8ddd3;
 }
 	.slide-track {
-		animation: scroll 40s linear infinite;
+		animation: scroll 45s linear infinite;
     display: flex;
     width: calc(350px* 7);
     align-items: center;
-    height: 200px;
+    height: 250px;
     align-items: center;
+    gap: 60px;
 	}
 	.slide {
 		height: 100px;
 		width: 250px;
 	}
   .slide p{
-    padding:0px 50px;
+    padding: 15px 10px;
+    font-size: 20px;
+    text-align: center;
+    color: cornsilk;
+    text-transform: capitalize;
   }
   .slide img{
     padding:0px 50px;
+  }
+
+  @media (max-width: 768px){
+    .slider-header{
+      margin: 20px 80px 0px 15px;
+      font-size: 28px;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      letter-spacing: 7px;
+    }
+    .slider-header span{
+      font-size: 30px;
+    }
+    .slide{
+      margin-top: -50px;
+    }
+    .slide-track{
+      gap: 15px;
+    }
+    .slide p{
+      font-size: 18px;
+    }
   }
