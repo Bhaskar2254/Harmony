@@ -1,71 +1,256 @@
-#title{
-    text-shadow: 0ch;
+/* Navbar styles */
+.container-fluid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-image: linear-gradient(35deg, #00c6ff 10%, #0072ff 90%);
+  padding: 2ch;
 }
-/* .nav{
-    position: fixed;
-} */
-.container-fluid{
-    position: fixed;
-    top: 0;            
-    left: 0;           
-    width: 100%;        
-    z-index: 1000;     
-    /* background-color: rgb(86, 137, 204); */
-    /* background-image:linear-gradient(to bottom right, #00c6ff, #0072ff); */
-    background-image:linear-gradient(35deg,#00c6ff 10%,#0072ff 90%);
-    padding: 2ch;
-}
-.container-fluid img{
-    /* width: 9%; */
-    margin-right: 20px;
-    height: 50px;
-    width: 50px;
+.container-fluid img {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
 }
 
-.nav-item a{
-    /* color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px; */
-    font-size: 17px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    color: ghostwhite;
-    text-transform: uppercase;
-    position: relative;
-    transition: all 500ms ease;
-    letter-spacing: var(--thm-letter-space-big);
-    margin-inline : 1pc;
+.nav-item a {
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  color: ghostwhite;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 500ms ease;
+  letter-spacing: var(--thm-letter-space-big);
+  margin-inline: 1pc;
 }
-/* .nav-item a:hover {
-    color: rgb(180, 67, 67);
+.navbar-brand {
+  margin-right: 20%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-item a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-item a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hamburger Icon Styles */
+.navbar-toggler {
+cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  top: 10px;
+}
+
+/* When menu is open, transform hamburger into a cross */
+.navbar-toggler-icon.open {
+  background-color: transparent; /* Hide the original bar */
+}
+
+.navbar-toggler-icon.open::before {
+  transform: rotate(45deg); /* Rotate the top bar */
+  top: 0;
+}
+
+.navbar-toggler-icon.open::after {
+  transform: rotate(-45deg); /* Rotate the bottom bar */
+  top: 0;
+}
+
+/* Sliding Menu Styles */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Initially hidden */
+  width: 200px;
+  /* height: 100%; */
+  background-color: #0072ff;
+  transition: right 0.5s ease-in-out;
+  z-index: 999;
+  border-radius: 0px 40px;
+  padding: 80px 10px 10px 10px;
+}
+.side-menu.open {
+  right: 0;
+}
+.side-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.side-menu-list li {
+  margin: 20px 0;
+}
+.side-menu-list li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  .navbar-brand {
+      margin-right: 0%;
+  }
+  .container-fluid {
+      padding: 1ch;
+  }
+  .nav-item {
+      display: none;
+  }
+}
+/* 
+.navbar-toggler-icon.open {
+  background-color: transparent; 
+}
+
+.navbar-toggler-icon.open::before {
+  transform: rotate(45deg); 
+  top: 0;
+}
+
+.navbar-toggler-icon.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon.open::before,
+.navbar-toggler-icon.open::after {
+  background-color: transparent; 
 } */
-.navbar-brand{
-    margin-right: 20%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* width: 60%; */
+
+.hamburger{
+  display: none;
 }
-.nav-item a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .nav-item a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-@media (max-width:500px) {
-    .navbar-brand{
-        margin-right: 0%;
-    }
-    .container-fluid{
-        padding: 1ch;
-    }
+@media (max-width:768px) {
+  .hamburger{display: block;}
+}
+.hamburger-container {
+  position: relative;
+  width: 30px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  transition: transform 2s ease, background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
+.hamburger.active {
+  background-color: transparent;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 2s ease;
+  padding-top: 60px;
+}
+
+.menu.open {
+  left: 0; /* Menu slides in */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }

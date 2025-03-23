@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+[data-aos="fade-up-new"] {
+    opacity: 0; /* Start with the element hidden */
+    transform: translateY(40px); /* Move the element up by 10px */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+  }
+  
+  [data-aos="fade-up-new"].aos-animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0px); /* Move element back to original position */
+  }
+
+  [data-aos="fade-down-new"] {
+    opacity: 0; /* Start with the element hidden */
+    transform: translateY(-40px); /* Move the element up by 10px */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+  }
+  
+  [data-aos="fade-down-new"].aos-animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0px); /* Move element back to original position */
+  }
+  

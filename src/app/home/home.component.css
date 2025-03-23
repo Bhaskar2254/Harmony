@@ -1,4 +1,7 @@
 
+
+
+
 /* Home Banner container */
 .home-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/camera.jpg') center center / cover no-repeat;
@@ -283,7 +286,7 @@
   }
   .HomePageServiceContent p{
     padding: 30px 60px 30px 60px;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Jost', sans-serif;
     color: #6d6697;
     text-align: justify;

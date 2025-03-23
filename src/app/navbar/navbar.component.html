@@ -1,53 +1,43 @@
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <img src="logo-removebg-preview.png" alt="logo">
-        <a class="navbar-brand" href="#">Harmony Group</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services">Services</a>
-                    <!-- <a routerLink="">Services</a> -->
-                </li>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="logo-removebg-preview.png" alt="logo">
+    <a class="navbar-brand" href="#">Harmony Group</a>
 
-                <!-- Dropdown Menu for About Us -->
-                <li class="nav-item">
-                  <a class="nav-link" href="/about-us">About Us</a>
-                  <!-- <a routerLink="">Services</a> -->
-              </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="/about-us" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a> -->
-                    <!-- <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> -->
-                <!-- </li> -->
-
-                <li class="nav-item">
-                    <a class="nav-link" aria-disabled="true" href="./contact-us">Contact</a>
-                </li>
-            </ul>
-
-            <!-- Search Form -->
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-        </div>
+    <!-- Hamburger Icon (Div Instead of Button) -->
+    <!-- <div class="navbar-toggler" (click)="toggleMenu()">
+      <span class="navbar-toggler-icon" [ngClass]="{'open': isMenuOpen}"></span>
+    </div> -->
+    <div class="hamburger-container" (click)="toggleMenu()">
+      <div class="hamburger" [class.active]="isMenuOpen"></div>
     </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true" href="./contact-us">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!-- <nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about-us">About Us</a></li>
-    <li><a routerLink="/services">Services</a></li>
-    <li><a routerLink="/contact-us">Contact Us</a></li>
-  </ul> 
-</nav> -->
+<!-- Sliding Menu Panel -->
+<div id="sideMenu" class="side-menu" [ngClass]="{'open': isMenuOpen}">
+  <ul class="side-menu-list">
+    <li><a href="#">Home</a></li>
+    <li><a href="/services">Services</a></li>
+    <li><a href="/about-us">About Us</a></li>
+    <li><a href="./contact-us">Contact</a></li>
+    <li><a href="./contact-us">Gallery</a></li>
+
+  </ul>
+</div>
