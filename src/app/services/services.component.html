@@ -1,12 +1,12 @@
 <app-header-banner
   [backgroundImage]="'/Handshake.jpg'"
   [title]="'WHAT WE DO'"
-  [text]="'At Harmony, we give our best in the fields we work...'">
+  [text]="'At Harmony, Expert Security, Exceptional Cleaning.'">
 </app-header-banner>
 <section class="section2">
   <div class="sectionOne">
     <div class="image-container">
-      <img src="watch1.jpg" alt="Culture Image" class="culture-image" />
+      <img src="/culture.jpg" alt="Culture Image" class="culture-image" />
     </div>
     <div class="text-container" >
       <h2 class="section-title">Culture We Nourish</h2>
@@ -33,7 +33,7 @@
           <p>{{ service.description }}</p>
         </div>
         <div class="footer3">
-          <a href="#" class="quote-btn3">GET QUOTE</a>
+          <a href="./contact-us" class="quote-btn3">GET QUOTE</a>
         </div>
       </div>
     </div>
@@ -41,21 +41,21 @@
     <section class="WCSservice-section" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="50" data-aos-easing="ease-out">
       <div class="WCScontainer">
         <div class="WCSimage-container">
-          <img src="watch3.jpg" alt="Security Surveillance">
+          <img src="Gallery/fire1.jpg" alt="Security Surveillance">
         </div>
         <div class="WCStext-container">
           <h2>THE TRAINING WE OFFER</h2>
           <p>
             The training we offer to external parties is developed in close consultation with relevant personnel to ensure the specific needs of each organisation are met.
           </p>
-          <p> • Emergency response • Conflict resolution
+          <p> There are various training that we conduct to ensure security.<br>
+            • Emergency response • Incident reporting
             • Customer service • Armed robbery
             • Suspicious packages • Holding techniques
-            • Dealing with aggressive persons
-            • Incident reporting
             • Hazard Identification & risk assessment
-            • Equal Employment Opportunity-discrimination
             • Supervisor training</p>
+            <button type="button" class="nav-button" [routerLink]="'/training'">Know More</button>
+
         </div>
       </div>
     </section>

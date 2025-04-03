@@ -138,6 +138,11 @@
   justify-content: center;
   align-items: center;
   padding: 50px 10%;
+  background-image: url(/background_training.png);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   
   .WCScontainer {
     display: flex;
@@ -145,6 +150,7 @@
     max-width: 1200px;
     width: 100%;
     gap: 30px;
+    
   }
 
   .WCSimage-container {
@@ -170,10 +176,11 @@
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       line-height: 1.6;
       color: #555;
       text-align: justify;
+      font-weight: 500;
     }
   }
 
@@ -189,6 +196,9 @@
     .WCStext-container h2{
       font-size: 1.7rem;
       margin-bottom: 30px;
+    }
+    .WCScontainer p{
+      font-size: 1.1rem;
     }
   }
 }
@@ -381,4 +391,28 @@
       }
     }
   }
-  
+
+  .nav-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    text-transform: uppercase;
+}
+
+.nav-button:hover {
+    background-color: #00bcd4;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav-button:focus {
+    box-shadow: 0 0 0 4px rgba(23, 131, 219, 0.5);
+}

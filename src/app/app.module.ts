@@ -16,6 +16,7 @@ import { HeaderBannerComponent } from './header-banner/header-banner.component';
 import { CompanyPotentialComponent } from './company-potential/company-potential.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TrainingComponent } from './training/training.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderBannerComponent,
     CompanyPotentialComponent,
     GalleryComponent,
+    TrainingComponent,
     
   ],
   imports: [AlertModule.forRoot(),

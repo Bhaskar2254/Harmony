@@ -8,10 +8,11 @@
         padding: 3em 1em; 
         font-family: 'Satoshi';
         font-weight: 300;
-        animation: slideLeft 1.5s ease-out forwards;
+        animation: slideLeft 1.5s ease-out forwards; 
     }
     h1{
         font-weight: 800;
+        
     }
     ul {
         list-style: none;
@@ -85,6 +86,7 @@
         border-bottom: 2px solid;
         border-image: linear-gradient(to right, #0053f8, #008df8, transparent) 1;
         margin-bottom: 15px;
+        
     }
     /*================
         FORM STYLES
@@ -157,6 +159,31 @@
         }
         .contact h2{
             font-size: 29px;
+        }
+        .brand,.contact h2{
+            font-size: 25px;
+            line-height: 40px;
+        }
+        .company-info ul{
+            margin: 0 0 0.5rem 0;
+        }
+        .company-info h3{
+            font-size: 17px;
+        }
+        .company-info li{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+        label{
+            margin-left: 12px;
+            margin-bottom: 3px;
+        }
+        .contact form input{
+            border-radius: 15px;
+            width: 100%;
+            padding: 0.2em 1em;
+            border: 1px solid #c9e6ff;
+            font-size: 14px;
         }
     }
 /* NEW FORM CONTACT use */

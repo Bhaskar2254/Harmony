@@ -3,10 +3,6 @@
     <img src="logo-removebg-preview.png" alt="logo">
     <a class="navbar-brand" href="#">Harmony Group</a>
 
-    <!-- Hamburger Icon (Div Instead of Button) -->
-    <!-- <div class="navbar-toggler" (click)="toggleMenu()">
-      <span class="navbar-toggler-icon" [ngClass]="{'open': isMenuOpen}"></span>
-    </div> -->
     <div class="hamburger-container" (click)="toggleMenu()">
       <div class="hamburger" [class.active]="isMenuOpen"></div>
     </div>
@@ -30,14 +26,12 @@
   </div>
 </nav>
 
-<!-- Sliding Menu Panel -->
 <div id="sideMenu" class="side-menu" [ngClass]="{'open': isMenuOpen}">
   <ul class="side-menu-list">
     <li><a href="#">Home</a></li>
     <li><a href="/services">Services</a></li>
     <li><a href="/about-us">About Us</a></li>
     <li><a href="./contact-us">Contact</a></li>
-    <li><a href="./contact-us">Gallery</a></li>
-
+    <li><a href="./gallery">Gallery</a></li>
   </ul>
 </div>

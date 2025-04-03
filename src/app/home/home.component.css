@@ -1,10 +1,7 @@
-
-
-
-
 /* Home Banner container */
 .home-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/camera.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/camera.jpg") center center / cover no-repeat;
   height: 100vh; /* Full screen height */
   display: flex;
   justify-content: center;
@@ -19,7 +16,7 @@
 
 /* Parallax effect on scroll */
 .home-banner::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -49,12 +46,12 @@
 }
 
 .home-banner-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 20px;
-  color: #FF6F00; /* Warm, energetic color */
+  color: #ff6f00; /* Warm, energetic color */
   animation: fadeInTitle 1.5s ease-out forwards;
   animation-delay: 0.5s;
 }
@@ -72,7 +69,7 @@
 }
 
 .home-banner-description {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 22px;
   line-height: 1.6;
   color: #f0f0f0; /* Light grey text */
@@ -98,7 +95,7 @@
 }
 
 .home-banner-button {
-  background-color: #FF6F00;
+  background-color: #ff6f00;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -116,7 +113,7 @@
 
 /* Hover effect on button */
 .home-banner-button:hover {
-  background-color: #FF3D00;
+  background-color: #ff3d00;
   transform: translateY(-5px);
 }
 
@@ -148,163 +145,168 @@
   }
 }
 
+/* info section starts */
+.info-section-all {
+  background-image: url("/camera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  /* info section starts */
-  .info-section-all{
-    background-image: url('/camera.jpg'); 
-    background-repeat: no-repeat;
-    background-size: cover;
+.info-section {
+  /* background: linear-gradient(to right, rgba(150, 0, 0, 0.8), rgba(0, 0, 150, 0.8));
+    */
+  color: white;
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 10px;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 15px; */
+  margin: 15px 20px;
+  padding: 0px 40px;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 150px;
+}
+
+h2 {
+  font-size: 80px;
+  padding: 0;
+  margin: 0px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.info-item p {
+  font-size: 24px;
+  margin: 0;
+  padding: 0px 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p {
+  font-size: 24px;
+  margin: 0;
+  padding: 30px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.download-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  * {
+    font-family: "Jost", sans-serif;
   }
-
-  .info-section {
-    /* background: linear-gradient(to right, rgba(150, 0, 0, 0.8), rgba(0, 0, 150, 0.8));
-    */color: white; 
-    text-align: center;
-    padding: 30px 40px;
-    border-radius: 10px;
+  P {
+    padding: 0px;
   }
-
   .info-content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* gap: 15px; */
-    margin: 15px 20px;
-    padding: 0px 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15px 15px;
   }
 
   .info-item {
-    flex: 1;
-    min-width: 150px;
+    min-width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
   }
 
-  h2 {
-    font-size: 80px;
-    padding: 0;
-    margin: 0px;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .info-item p{
-    font-size: 24px;
-    margin: 0;
-    padding: 0px 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  .info-item h2 {
+    /* font-size: 1.8rem; */
+    color: black;
   }
 
-  p {
-    font-size: 24px;
-    margin: 0;
-    padding: 30px;
+  .info-item p {
+    font-size: 15px;
+    padding: 0px;
   }
 
   .description {
-    max-width: 800px;
-    margin: 0 auto 20px;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0 10px;
   }
 
   .button-container {
-    text-align: center;
+    width: 100%;
   }
 
   .download-btn {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+    width: 90%;
+    max-width: 300px;
   }
+}
 
-  .download-btn:hover {
-    background: #0056b3;
-  }
+/* HomePageService */
+.HomeImage1 {
+  margin-top: 35px;
+  width: 40%;
+  height: 450px;
+  object-fit: cover;
+  animation: autoRotate 5s linear;
+  animation-timeline: view();
+}
+.HomePageService {
+  text-align: center;
+}
+.HomePageServiceContent {
+  padding-top: 20px;
+}
+.HomePageServiceContent p {
+  padding: 30px 100px;
+  font-size: 22px;
+  line-height: 40px;
+  font-family: Jost, sans-serif;
+  color: rgb(109, 102, 151);
+  text-align: justify;
+}
 
-  @media (max-width: 768px) {
-     *{
-      font-family: "Jost", sans-serif; 
-   }
-   P{
-    padding: 0px;
-   } 
-    .info-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 15px 15px;
-    }
-
-    .info-item {
-      min-width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    padding-bottom: 10px;
-    }
-
-    .info-item h2 {
-      /* font-size: 1.8rem; */
-      color: black;
-    }
-
-    .info-item p {
-      font-size: 15px;
-      padding: 0px;
-    }
-
-    .description {
-      font-size: 1rem;
-      padding: 0 10px;
-    }
-
-    .button-container {
-      width: 100%;
-    }
-
-    .download-btn {
-      width: 90%;
-      max-width: 300px;
-    }
-
-  }
-
-  /* HomePageService */
-  .HomeImage1{
-    margin-top: 15px;
-    width: 50%;
-    animation: autoRotate 5s linear;
-    animation-timeline: view();
-  }
-  .HomePageService{
-    text-align: center;
-  }
-  .HomePageServiceContent{
-    
-    padding-top: 20px;
-  }
-  .HomePageServiceContent p{
-    padding: 30px 60px 30px 60px;
-    font-size: 22px;
-    font-family: 'Jost', sans-serif;
-    color: #6d6697;
-    text-align: justify;
-  }
-
-  /* slider */
+/* slider */
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 .slider {
-	/* height: 100px; */
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
+  /* height: 100px; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
   background-color: rgb(0 151 192);
 }
 .slider-header {
@@ -316,52 +318,62 @@
   /* font-weight: 900; */
   text-transform: uppercase;
 }
-.slider-header span{
+.slider-header span {
   font-size: 40px;
   color: #e8ddd3;
 }
-	.slide-track {
-		animation: scroll 45s linear infinite;
-    display: flex;
-    width: calc(350px* 7);
-    align-items: center;
-    height: 250px;
-    align-items: center;
-    gap: 60px;
-	}
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
-  .slide p{
-    padding: 15px 10px;
-    font-size: 20px;
-    text-align: center;
-    color: cornsilk;
-    text-transform: capitalize;
-  }
-  .slide img{
-    padding:0px 50px;
-  }
+.slide-track {
+  animation: scroll 45s linear infinite;
+  display: flex;
+  width: calc(350px * 7);
+  align-items: center;
+  height: 250px;
+  align-items: center;
+  gap: 60px;
+}
+.slide {
+  height: 100px;
+  width: 250px;
+}
+.slide p {
+  padding: 15px 10px;
+  font-size: 20px;
+  text-align: center;
+  color: cornsilk;
+  text-transform: capitalize;
+}
+.slide img {
+  padding: 0px 50px;
+}
 
-  @media (max-width: 768px){
-    .slider-header{
-      margin: 20px 80px 0px 15px;
-      font-size: 28px;
-      font-family: "Jost", sans-serif;
-      font-weight: 600;
-      letter-spacing: 7px;
-    }
-    .slider-header span{
-      font-size: 30px;
-    }
-    .slide{
-      margin-top: -50px;
-    }
-    .slide-track{
-      gap: 15px;
-    }
-    .slide p{
-      font-size: 18px;
-    }
+@media (max-width: 768px) {
+  .HomeImage1 {
+    width: 70%;
+    height: 350px;
+    padding-top: 15px;
   }
+  .HomePageServiceContent p {
+    padding: 15px 30px 55px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .slider-header {
+    margin: 20px 80px 0px 15px;
+    font-size: 28px;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    letter-spacing: 7px;
+  }
+  .slider-header span {
+    font-size: 30px;
+  }
+  .slide {
+    margin-top: -50px;
+  }
+  .slide-track {
+    gap: 15px;
+  }
+  .slide p {
+    font-size: 18px;
+  }
+}

@@ -283,10 +283,10 @@ i img {
 
 /* our vision starts */
 .vision-section {
-  background-image: url('/vision.jpg'); /* Replace with your actual image */
+  background-image: url('/Gallery/vision.jpg'); /* Replace with your actual image */
   background-size: cover;
-  background-position: center;
-  background-blend-mode: luminosity;
+  background-position: top;
+  background-blend-mode: exclusion;
   width: 100%; /* Ensure background covers the full width */
   display: flex;
   justify-content: center;
@@ -300,11 +300,11 @@ i img {
 /* Content inside the section */
 .vision-content {
   max-width: 1200px;
-  padding: 45px;
-  background-color: rgba(0, 0, 0, 0.7);  /* Darker overlay for contrast */
-  color: #fff;  /* White text for readability */
-  text-align: center;
-  border-radius: 10px;
+    padding: 90px 0px;
+    background-color: rgb(93 85 85 / 70%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
   transform: translateX(-100%); /* Start off-screen from the left */
   animation: slideIn 1s ease-out forwards; /* Animation to slide in from the left */
 }

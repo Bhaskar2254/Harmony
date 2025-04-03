@@ -18,7 +18,7 @@ export class NavbarComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     // Close the menu when resizing to laptop or desktop view (above 768px)
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 992) {
       this.isMenuOpen = false;
     }
   }

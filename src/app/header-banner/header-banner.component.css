@@ -57,6 +57,11 @@ span{
   color: skyblue;
 }
 /* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .HeaderGap{
+    margin-top: 50px;
+  }
+}
 @media (max-width: 768px) {
   .HeaderGap{
     margin-top: 50px;
