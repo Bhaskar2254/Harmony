@@ -1,5 +1,5 @@
 
-
+/* Culture Section starts */
 .sectionOne {
   display: flex;
   flex-wrap: wrap;
@@ -42,12 +42,19 @@
 }
 
 .section-title {
-  font-size: 2.3rem;
-  margin-bottom: 40px;
-  /* color: #fff; */
-  text-align: center;
-  text-decoration-line: overline underline;
-  text-underline-offset: 15px;
+      text-align: center;
+      text-decoration-line: overline underline;
+      text-underline-offset: 15px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #343a40;
+      margin-bottom: 30px;
+      margin-top: -20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      /* text-decoration: underline; */
+      text-decoration-color: #28a745;
+      text-decoration-thickness: 3px;
 }
 
 .intro-paragraph {
@@ -64,6 +71,7 @@
 }
 
 .bullet-points li {
+  font-style: italic;
   position: relative;
   padding-left: 25px;
   margin-bottom: 8px;
@@ -79,7 +87,7 @@
   color: #007bff; /* Customize bullet color */
 }
 .bullet-points span{
-  font-style: italic;
+  font-style: normal;
   font-weight: 600;
   font-family: 'Poppins';
 }
@@ -107,7 +115,8 @@
   }
   .section-title{
     font-size: 25px;
-    margin-bottom: 20px;
+        margin-bottom: 35px;
+        margin-top: 5px;
   }
 }
 
@@ -131,78 +140,7 @@
     padding: 20px;
   }
 }
-
-/* why choose us section */
-.WCSservice-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 10%;
-  background-image: url(/background_training.png);
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  
-  .WCScontainer {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    gap: 30px;
-    
-  }
-
-  .WCSimage-container {
-    flex: 1;
-    
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  }
-
-  .WCStext-container {
-     flex: 1;
-    
-    h2 {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #1a1a1a;
-       margin-bottom: 30px;
-      text-align: center;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #555;
-      text-align: justify;
-      font-weight: 500;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .WCScontainer {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .WCStext-container {
-      margin-top: 15px;
-    }
-    .WCStext-container h2{
-      font-size: 1.7rem;
-      margin-bottom: 30px;
-    }
-    .WCScontainer p{
-      font-size: 1.1rem;
-    }
-  }
-}
-
+/* Culture Section Ends */
 
   /* section3 */
   .section3{
@@ -416,3 +354,102 @@
 .nav-button:focus {
     box-shadow: 0 0 0 4px rgba(23, 131, 219, 0.5);
 }
+
+/* Training section Starts*/
+.training-section {
+  padding: 60px 10%;
+  background-image: url('/background_training.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .training-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 2.9rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-transform: uppercase;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 560px;
+        height: 3.5px;
+        /* background-color: #ff4500; */
+        background-color: #28a745;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .training-container {
+    display: flex;
+    gap: 100px; 
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .training-image {
+      flex: 1;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .training-content {
+      flex: 1;
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 20px;
+        font-weight: 500;
+        text-align: justify;
+      }
+
+    }
+  }
+
+  @media (max-width: 768px) {
+    .training-container {
+      flex-direction: column;
+      gap: 30px;
+
+      .training-image,
+      .training-content {
+        width: 100%;
+      }
+
+      .training-header h2 {
+        font-size: 2.2rem;
+      }
+
+      .training-content p {
+        font-size: 1.05rem;
+      }
+    }
+     .training-header h2 {
+      font-size: 25px;
+     }
+     .training-header h2::after{
+      width: 300px;
+
+     }
+  }
+}
+/* Training section Ends*/

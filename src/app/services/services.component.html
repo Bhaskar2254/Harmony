@@ -1,65 +1,67 @@
-<app-header-banner
-  [backgroundImage]="'/Handshake.jpg'"
-  [title]="'WHAT WE DO'"
+<app-header-banner [backgroundImage]="'/Handshake.jpg'" [title]="'WHAT WE DO'"
   [text]="'At Harmony, Expert Security, Exceptional Cleaning.'">
 </app-header-banner>
-<section class="section2">
+<section>
   <div class="sectionOne">
     <div class="image-container">
       <img src="/culture.jpg" alt="Culture Image" class="culture-image" />
     </div>
-    <div class="text-container" >
+    <div class="text-container">
       <h2 class="section-title">Culture We Nourish</h2>
       <p class="intro-paragraph">
-        We emphasize in integrity, vigilance, and continuous improvement. Our team is dedicated to providing top-tier security services while nurturing a supportive and ethical work environment.
+        We emphasize in integrity, vigilance, and continuous improvement. Our team is dedicated to providing top-tier
+        security services while nurturing a supportive and ethical work environment.
       </p>
       <ul class="bullet-points">
         <li><span>Integrity at Core </span>: Upholding the highest ethical standards in all our operations.</li>
         <li><span>Vigilant Monitoring </span>: Ensuring 24/7 surveillance to protect assets and individuals.</li>
-        <li><span>Continuous Improvement</span>: Regular training and development to stay ahead in the security industry.</li>
-        <li><span>Community Engagement</span>: Actively participating in local initiatives to strengthen community ties.</li>
+        <li><span>Continuous Improvement</span>: Regular training and development to stay ahead in the security
+          industry.</li>
+        <li><span>Community Engagement</span>: Actively participating in local initiatives to strengthen community ties.
+        </li>
       </ul>
     </div>
   </div>
-   </section>
-   <section class="section3">
-    <div class="card-container3">
-      <div class="card3" *ngFor="let service of services3; let i = index" [ngStyle]="{'animation-delay': i * 100 + 'ms'}" >
-        <div class="image-container3">
-          <img [src]="service.image" alt="Housekeeping Service" />
-        </div>
-        <div class="content3">
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
-        </div>
-        <div class="footer3">
-          <a href="./contact-us" class="quote-btn3">GET QUOTE</a>
-        </div>
+</section>
+<section class="section3">
+  <div class="card-container3">
+    <div class="card3" *ngFor="let service of services3; let i = index" [ngStyle]="{'animation-delay': i * 100 + 'ms'}">
+      <div class="image-container3">
+        <img [src]="service.image" alt="Housekeeping Service" />
+      </div>
+      <div class="content3">
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+      <div class="footer3">
+        <a href="./contact-us" class="quote-btn3">GET QUOTE</a>
       </div>
     </div>
-  </section>
-    <section class="WCSservice-section" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="50" data-aos-easing="ease-out">
-      <div class="WCScontainer">
-        <div class="WCSimage-container">
-          <img src="Gallery/fire1.jpg" alt="Security Surveillance">
-        </div>
-        <div class="WCStext-container">
-          <h2>THE TRAINING WE OFFER</h2>
-          <p>
-            The training we offer to external parties is developed in close consultation with relevant personnel to ensure the specific needs of each organisation are met.
-          </p>
-          <p> There are various training that we conduct to ensure security.<br>
-            • Emergency response • Incident reporting
-            • Customer service • Armed robbery
-            • Suspicious packages • Holding techniques
-            • Hazard Identification & risk assessment
-            • Supervisor training</p>
-            <button type="button" class="nav-button" [routerLink]="'/training'">Know More</button>
-
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    
+  </div>
+</section>
+<section class="training-section" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="50"
+  data-aos-easing="ease-out">
+  <div class="training-header">
+    <h2>THE TRAINING WE OFFER</h2>
+  </div>
+  <div class="training-container">
+    <div class="training-image">
+      <img src="Gallery/fire1.jpg" alt="Security Training">
+    </div>
+    <div class="training-content">
+      <p>
+        The training we offer to external parties is developed in close consultation with relevant personnel to ensure
+        the specific needs of each organisation are met.
+      </p>
+      <p>
+        There are various training that we conduct to ensure security.<br>
+        • Emergency response • Incident reporting<br>
+        • Customer service • Armed robbery<br>
+        • Suspicious packages • Holding techniques<br>
+        • Hazard Identification & risk assessment<br>
+        • Supervisor training
+      </p>
+      <button type="button" class="nav-button" [routerLink]="'/training'">Know More</button>
+    </div>
+  </div>
+</section>

@@ -27,11 +27,6 @@ export class ServicesComponent {
       description: 'Ensuring a safe workplace.Protecting your business, ensuring peace of mind.'
     },
     {
-      image: 'HouseKeeping1.jpg',
-      title: 'HouseKeeping Services for Private',
-      description: 'Enrich the productivity with our shining and calming housekeeping services.'
-    },
-    {
       image: '/Watchman/bouncer1.jpg',
       title: 'Bodyguard / Bouncer services',
       description: 'We ensure your safety with elite protection.Trust us for unmatched security and peace of mind.'
@@ -40,6 +35,11 @@ export class ServicesComponent {
       image: 'Gallery/vision.jpg',
       title: 'Training staff/employees services',
       description: 'We ensure your safety with elite protection.Trust us for unmatched security and peace of mind.'
+    },
+    {
+      image: 'HouseKeeping1.jpg',
+      title: 'HouseKeeping Services for Private',
+      description: 'Enrich the productivity with our shining and calming housekeeping services.'
     },
     {
       image: 'watch1.jpg',
