@@ -1,5 +1,4 @@
-import { Component, Inject, inject, OnInit,PLATFORM_ID } from '@angular/core';
-
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 @Component({
   selector: 'app-home',
   standalone: false,
@@ -7,6 +6,6 @@ import { Component, Inject, inject, OnInit,PLATFORM_ID } from '@angular/core';
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent{
+  export class HomeComponent {
 
-}
+  }

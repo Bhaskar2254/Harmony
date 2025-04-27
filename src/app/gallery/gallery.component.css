@@ -3,9 +3,19 @@
   }
   
   .gallery-heading {
-    text-align: center;
+    /* text-align: center;
     font-size: 2rem;
+    margin-bottom: 20px; */
+    text-align: center;
     margin-bottom: 20px;
+    font-size: 45px;
+    font-variant-caps: all-petite-caps;
+    text-decoration: underline;
+    text-decoration-color: #28a745;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-align: center;
+
   }
   
   .gallery {
@@ -24,5 +34,12 @@
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 600px) {
+    .gallery-heading {
+      font-size: 25px;
+    }
+
   }
   

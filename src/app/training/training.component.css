@@ -320,3 +320,64 @@ a {
         font-size: 1.1rem; /* Slightly smaller paragraph on mobile */
     }
 }
+.rewards-section {
+    padding: 2rem 1rem;
+    background-color: #f4f9ff; 
+    text-align: center;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    max-width: 320px; */
+  
+    .rewards-header {
+      margin-bottom: 2rem;
+  
+      h2 {
+        /* font-size: 2rem;
+        color: #004e92;
+        margin-bottom: 0.5rem; */
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #2196f3;
+      }
+  
+      p {
+        color: #666;
+        font-size: 1rem;
+      }
+    }
+  
+    .rewards-gallery {
+      display: flex;
+      gap: 5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      .reward-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        width: 100%;
+        max-width: 400px;
+        transition: transform 0.3s;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+  
+        p {
+          padding: 1rem;
+          font-weight: 500;
+          color: #333;
+        }
+      }
+    }
+  }
+  

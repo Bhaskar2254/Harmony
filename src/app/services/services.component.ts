@@ -40,12 +40,7 @@ export class ServicesComponent {
       image: 'HouseKeeping1.jpg',
       title: 'HouseKeeping Services for Private',
       description: 'Enrich the productivity with our shining and calming housekeeping services.'
-    },
-    {
-      image: 'watch1.jpg',
-      title: 'Bodyguard services',
-      description: 'We ensure your safety with elite protection.Trust us for unmatched security and peace of mind.'
-    }
+    } 
   ];
   
 }
